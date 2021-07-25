@@ -14,13 +14,7 @@
 		<!--  -->
 
     <style>
-			.header-title {
-				font-family: 'Zen Loop', cursive;
-				font-size: 42px;
-				text-align: center;
-			}
-
-			body {
+      body {
 				font-family: 'PT Mono', 'monospace';
 				padding: 30px;
 				background-color: rgba(247,247,247, 0.6);
@@ -30,22 +24,30 @@
 				text-align: justify;
 			}
 
+			.header-title {
+				font-family: 'Zen Loop', cursive;
+				font-size: 42px;
+				text-align: center;
+			}
 
+			
 
-		
 
     </style>
     
     <title>Meu Portfólio</title>
 </head>
-<body>
-    <h1 class="header-title">Meu Portfólio</h1>
 
-		<!-- link interno 'nav bar' -->
-    <p><a href="#_descricao">Sobre</a>, <a href="#_habilidades">Habilidades</a>, <a href="#_blogs">Blogs</a></p>
+<body>
+    <div class="header-title">
+      <h1>Meu Portfólio</h1>
+    </div>
+
+    <div class="menu-interno">
+      <p><a href="#_descricao">Sobre</a>, <a href="#_habilidades">Habilidades</a>, <a href="#_blogs">Blogs</a></p>
+    </div>
     
-		<!-- nome/descrição -->
-    <div id="_descricao">
+    <div id="_descricao" class="m-descricao">
         <h2>Sobre mim</h2>
        <p>
           &nbsp; &nbsp;Me chamo <a href="#_eu"><strong>Robert Rodrigues Martins</strong> </a>e sou Apaixonado por tecnologia e suas aplicações.
@@ -60,8 +62,7 @@
        </p>
     </div>
 
-    <!-- Minhas habilidades -->
-    <div id="_habilidades">
+    <div id="_habilidades" class="m-habilidades">
         <ul>
            <strong>Minhas habilidades: </strong> 
             <li><em>Calma estoíca</em></li>
@@ -73,8 +74,7 @@
         </ul>
     </div>
 
-    <!-- blogs preferidos -->
-    <div id="_blogs">
+    <div id="_blogs" class="m-blogs">
         <p>Uma breve lista dos blogs que gosto: </p>
         <ul>
             <li>O site da <b><a href="https://pt.khanacademy.org/profile/mydreamAcademy/" target="_blank" >Khan Academy</a></b></li>
@@ -82,8 +82,7 @@
         </ul>
     </div>
 
-    <!-- foto minha -->
-    <div id="_eu">
+    <div id="_eu" class="m-foto">
         <img src="perfil.webp" alt="foto de robert rodrigues martins." >
     </div>
 
